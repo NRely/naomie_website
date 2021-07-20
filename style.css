@@ -1,7 +1,105 @@
-.header {
-    background-color:aliceblue;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif arial;
+.body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
     width: 100%;
-    height: 80px; 
-  }
-  
+    list-style: none;
+    text-decoration: none;
+
+}
+
+.Navigation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rgb(132, 190, 158);
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 244, 231);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 22px;
+    
+}
+
+.NavLinks{
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+
+}
+
+.NavLinks a{
+    color: rgb(255, 244, 231);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+
+.NavLinks li{
+list-style: none;
+
+}
+
+.Mobile div{
+width: 25px;
+height: 5px;
+background-color: rgb(255, 244, 231);
+margin: 5px;
+
+}
+
+    .Moving{
+    height: 100vh;
+    width: 100%;
+    background-image: url(NYCBuildings.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 5s;
+
+    -webkit-animation-name: MovingPictures;
+    -webkit-animation-direction: alternate-reverse;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+    -webkit-animation-timing-function: ease-in-out;
+
+    @-webkit-keyframes MovingPictures {
+        0%{
+            background-image:url(Skyscrapers.png);
+
+        }
+        20%{
+            background-image:url(NYC.png);
+            
+        }
+        40%{
+            background-image:url(Home.png);
+            
+        }
+        60%{
+            background-image:url(TallBuildings.png);
+            
+        }
+        80%{
+            background-image:url(NewYork.png);
+            
+        }
+        100%{
+            background-image:url(NYCBuildings.png);
+            
+        }
+    }
+
+
+
+
+
+}
+
+
+   

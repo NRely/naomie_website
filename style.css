@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
 .body{
     margin: 0;
     padding: 0;
@@ -5,7 +7,8 @@
     width: 100%;
     list-style: none;
     text-decoration: none;
-
+    background: #000000;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .Navigation{
@@ -13,93 +16,215 @@
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: rgb(132, 190, 158);
+    background-color: rgb(123, 179, 148);
     font-family: 'Poppins', sans-serif;
+    z-index: 2;
+    position: relative;
+}
+
+.Begin{
     color: rgb(255, 244, 231);
     text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 22px;
-    
+    letter-spacing: 3px;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 .NavLinks{
     display: flex;
-    width: 30%;
+    width: 40%;
     justify-content: space-around;
-
 }
 
 .NavLinks a{
     color: rgb(255, 244, 231);
     text-decoration: none;
     letter-spacing: 3px;
+    word-spacing: 8px;
     font-weight: bold;
     font-size: 14px;
-
 }
 
 .NavLinks li{
-list-style: none;
+    list-style: none;
+}
 
+.Mobile{
+    display: none;
+    cursor: pointer;
 }
 
 .Mobile div{
-width: 25px;
-height: 5px;
-background-color: rgb(255, 244, 231);
-margin: 5px;
+    width: 25px;
+    height: 3px;
+    background-color: rgb(255, 244, 231);
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+ }
+
+@media screen and (max-width:1024px){
+    .NavLinks{
+        width: 60%;
+    }
 
 }
 
-    .Moving{
+@media screen and (max-width:768px){
+    .NavLinks{
+        width: 40%;
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: rgb(123, 179, 148);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .NavLinks li{
+        opacity: 0;
+        animation-name: NavLinksFade;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        animation-play-state: running;
+        animation-timing-function: ease-in;
+
+    }
+
+    .Mobile{
+        display: block;
+    }
+  
+}
+
+.Navigation-active{
+    transform: translateX(0%);
+}
+
+@keyframes NavLinksFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .M1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .M2{
+    opacity: 0;
+}
+
+.toggle .M3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+.search{
+        width: 100%;
+        position: relative;
+        display: flex;
+    }
+  
+  .searchTerm {
+        width: 100%;
+        border: 5px solid rgb(123, 179, 148);
+        border-right: none;
+        padding: 5px;
+        height: 50px;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+        color: rgb(123, 179, 148);
+    }
+  
+  .searchTerm:focus{
+        color: rgb(123, 179, 148);
+    }
+  
+  .searchButton {
+        width: 40px;
+        cursor: pointer;
+        height: 50px;
+        border: 1px solid rgb(123, 179, 148);        
+        color: rgb(255, 244, 231);
+        text-align: center;
+        background: rgb(123, 179, 148);;
+        border-radius: 0 5px 5px 0;
+        font-size: 20px;
+    }
+  
+  .wrap{
+     width: 50%;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+   }
+
+.Moving{
     height: 100vh;
     width: 100%;
-    background-image: url(NYCBuildings.png);
+    background-image: url(photo.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    transition: 5s;
+    transition: 3s;
+    animation-name: MovingPictures;
+    animation-direction: alternate-reverse;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+    
+@keyframes MovingPictures {
+    0%{
+        background-image:url(photo.jpg);
 
-    -webkit-animation-name: MovingPictures;
-    -webkit-animation-direction: alternate-reverse;
-    -webkit-animation-duration: 10s;
-    -webkit-animation-fill-mode: forwards;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-play-state: running;
-    -webkit-animation-timing-function: ease-in-out;
-
-    @-webkit-keyframes MovingPictures {
-        0%{
-            background-image:url(Skyscrapers.png);
-
-        }
-        20%{
-            background-image:url(NYC.png);
-            
-        }
-        40%{
-            background-image:url(Home.png);
-            
-        }
-        60%{
-            background-image:url(TallBuildings.png);
-            
-        }
-        80%{
-            background-image:url(NewYork.png);
-            
-        }
-        100%{
-            background-image:url(NYCBuildings.png);
-            
-        }
     }
+    20%{
+        background-image:url(Ebba-Picking-your-real-estate-agent-Ideal-home-with-car-in-driveway.jpg)
+            
+    }
+    40%{
+        background-image:url(corpus-christi-real-estate-1920x960.jpg);
+            
+    }
+    60%{
+        background-image:url(DSC_8901_final-1920x960.jpg);
+            
+    }
+    80%{
+        background-image:url(welcome.jpg);
+            
+    }
+    100%{
+        background-image:url(1600110398446.jpg);
+            
+    }
+}
 
+.Darkbackground{
+    opacity: 0.5;
+}
 
-
-
-
+.housecard{
+    background-color: white;
 }
 
 
-   
+
+
+
+
+
+ 

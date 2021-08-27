@@ -1,0 +1,7 @@
+Houses.map(
+  (item) => {
+    console.log(item.name)
+    const node = document.createTextNode(item.name)
+    document.getElementById("test").appendChild(node);   
+  }
+)

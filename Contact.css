@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.body{
+    padding: 0;
+    margin: 0;
+    color: rgb(255, 244, 231);
+    font-family: 'Poppins';
+}
+
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact .content h2{
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(255, 244, 231);
+}
+
+.con .coninfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.con .coninfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: rgb(123, 179, 148);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+.container .coninfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: rgb(255, 244, 231);
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .coninfo .box .text h3{
+    font-weight: 500;
+    color: rgb(255, 244, 231);
+}
+
+.ContactMoving{
+    height: 100vh;
+    width: 100%;
+    background-image: url(Downtown\ Raleigh\ at\ Dusk.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 3s;
+    animation-name: ContactMovingPictures;
+    animation-direction: alternate-reverse;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+    
+@keyframes ContactMovingPictures {
+    0%{
+        background-image:url(Downtown\ Raleigh\ at\ Dusk.jpg);
+
+    }
+    20%{
+        background-image:url(23770696e86230ab2f6d000142be218a-1-.jpg)
+            
+    }
+    40%{
+        background-image:url(Virtual-Renovation-1920x960.jpg);
+            
+    }
+    60%{
+        background-image:url(TRASERA_OK_H11_BUENA.jpg);
+            
+    }
+    80%{
+        background-image:url(18th-3441-WEB-1-e1601060978192.jpg);
+            
+    }
+    100%{
+        background-image:url(GI_647379800_SciotoMile.jpg);
+            
+    }
+}

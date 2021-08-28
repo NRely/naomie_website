@@ -25,7 +25,6 @@ const NavigationSlide = ()=> {
     }if(aboutsec){
       aboutsec.classList.toggle('Darkbackground');
     }
-    
 
     NavLinks.forEach((link, index)=>{
       if(link.style.animation){

@@ -14,7 +14,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 40%;
+    width: 30%;
     background: rgba(0, 0, 0, .7);
     top: 50%;
     left: 50%;
@@ -56,6 +56,30 @@
 .container .coninfo .box .text h3{
     font-weight: 500;
     color: rgb(255, 244, 231);
+}
+
+@media screen and (max-width:1200px){
+    .contact{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .contact{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .contact{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .contact{
+        width: 70%;
+    }
 }
 
 .ContactMoving{

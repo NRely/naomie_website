@@ -8,13 +8,17 @@
 }
 
 .contact{
-    position: relative;
-    min-height: 100vh;
+    position: absolute;
     padding: 50px 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 40%;
+    background: rgba(0, 0, 0, .7);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .contact .content h2{

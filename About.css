@@ -1,0 +1,62 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);x
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.aboutsec{
+    background: url(Unreal+Engine_spotlights_zipview-simplifies-real-estate-with-immersive-vr-archviz-solution_Spotlight_OlimPlanet_blog_feature_img-1920x960-3d4df36c1239ea1c76561d8d33335128cb53ce27.jpg) no-repeat left;
+    background-size: 100%;
+    background-color: rgb(174, 199, 185);
+    overflow: hidden;
+    padding: 100px 0;
+    font-family: 'Poppins';
+}
+
+.innersec{
+    width: 55%;
+    float: right;
+    background-color: rgb(174, 199, 185);
+    padding: 150px;
+}
+
+.innersec h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+    color: rgb(255, 244, 231);
+}
+
+.abouttext{
+    font-size: 13px;
+    color: rgb(255, 244, 231);
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width:1200px){
+    .innersec{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .aboutsec{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .innersec{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .aboutsec{
+        padding: 0;
+    }
+    .innersec{
+        padding: 60px;
+    }
+}

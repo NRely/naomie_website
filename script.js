@@ -8,18 +8,24 @@ const NavigationSlide = ()=> {
   const Moving = document.querySelector('.Moving');
   const wrap = document.querySelector('.wrap');
   const container = document.querySelector('#container');
+  const ContactMoving = document.querySelector('.ContactMoving');
+  const aboutsec = document.querySelector('.aboutsec')
 
 
   Mobile.addEventListener('click',() => {
     Navigation.classList.toggle('Navigation-active');
-    
 
     if(Moving){
       Moving.classList.toggle('Darkbackground');
       wrap.classList.toggle('Darkbackground');
-    }else{
-      container.classList.toggle('Darkbackground');
+    }if(container){
+     container.classList.toggle('Darkbackground');
+    }if(ContactMoving){
+      ContactMoving.classList.toggle('Darkbackground');
+    }if(aboutsec){
+      aboutsec.classList.toggle('Darkbackground');
     }
+    
 
     NavLinks.forEach((link, index)=>{
       if(link.style.animation){

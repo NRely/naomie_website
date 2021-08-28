@@ -6,7 +6,6 @@ const Houses = [
       bedroom: '3',
       bathroom: '2',
       estimated_payment: '$3,700/month',
-      listed_by: 'Rely Estate',
       address: '80-08 78th Ave, Glendale, NY 11385'
     },
       {
@@ -16,7 +15,6 @@ const Houses = [
       bedroom: '3',
       bathroom: '1.5',
       estimated_payment: '$3,901/month',
-      listed_by: 'Rely Estate',
       address: '67-28 Bell Blvd, Bayside, NY 11364'
     },
     {
@@ -26,7 +24,6 @@ const Houses = [
       bedroom: '3',
       bathroom: '3',
       estimated_payment: '$4,766/month',
-      listed_by: 'Rely Estate',
       address: '18-79 Suydam St, Ridgewood, NY 11385'
     },
     {
@@ -36,7 +33,6 @@ const Houses = [
       bedroom: '6',
       bathroom: '2.5',
       estimated_payment: '$5,170/month',
-      listed_by: 'Rely Estate',
       address: '46-90 Utopia Pkwy, Flushing, NY 11358'
     },
     {
@@ -46,7 +42,6 @@ const Houses = [
       bedroom: '3',
       bathroom: '2.5',
       estimated_payment: '$4,518/month',
-      listed_by: 'Rely Estate',
       address: '261 Crocus Ave, Floral Park, NY 11001'
     },
     {
@@ -56,7 +51,6 @@ const Houses = [
       bedroom: '4',
       bathroom: '3.5',
       estimated_payment: '$6,404/month',
-      listed_by: 'Rely Estate',
       address: '170 Whitewood Dr, Massapequa Park, NY 11762'
     },
   ];
@@ -81,7 +75,7 @@ const Houses = [
 
       textcreator(`price: ${house.price}`, housecard);
       
-      textcreator(`sqft ${house.sqft}`, housecard);
+      textcreator(`sqft: ${house.sqft}`, housecard);
 
       textcreator(`bedroom: ${house.bedroom}`, housecard);
 
